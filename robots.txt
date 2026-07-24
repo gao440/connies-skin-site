@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gao440.github.io/connies-skin-legal/sitemap.xml
+Sitemap: https://gao440.github.io/connies-skin-site/sitemap.xml
