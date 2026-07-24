@@ -1,56 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Connie's Skin — Support</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65; margin: 0 auto; max-width: 720px; padding: 32px 20px 64px;
-    color: #2c3435; background: #f8fafa;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e3e8e8; background: #131717; }
-    a { color: #7fd8d0; }
-    h1, h2 { color: #9ff1ea; }
-    .card { background: #1c2222; }
-  }
-  h1 { color: #016b65; font-size: 1.7rem; letter-spacing: -0.02em; }
-  h2 { color: #016b65; font-size: 1.15rem; margin-top: 2em; }
-  a { color: #016b65; }
-  .card { background: #ffffff; border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
-  .meta { color: #757c7d; font-size: 0.9rem; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075b57">
+  <meta name="description" content="Connie's Skin turns your skincare shelf into a calmer AM and PM routine—with ingredient cautions, gentle reminders, and progress you can actually follow.">
+  <meta property="og:title" content="Connie's Skin — A calmer skincare routine">
+  <meta property="og:description" content="Build, follow, and understand your skincare routine without the guesswork.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gao440.github.io/connies-skin-legal/">
+  <meta property="og:image" content="https://gao440.github.io/connies-skin-legal/assets/og.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Connie's Skin — A calmer skincare routine">
+  <meta name="twitter:description" content="Build, follow, and understand your skincare routine without the guesswork.">
+  <meta name="twitter:image" content="https://gao440.github.io/connies-skin-legal/assets/og.webp">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Connie's Skin — Your calm skincare routine companion</title>
 </head>
 <body>
-<h1>Connie's Skin</h1>
-<p class="meta">Your daily skincare routine companion</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<p>Connie's Skin helps you know exactly what skincare routine to do today — morning or evening — with ordered steps, ingredient-conflict warnings, streaks, and progress tracking. Take the product quiz for a personalized Korean skincare routine, and optionally order it as a kit.</p>
+  <header class="site-header" data-header>
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html" aria-label="Connie's Skin home">
+        <img src="assets/icon.webp" width="42" height="42" alt="">
+        <span>Connie's Skin</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="support.html">Support</a>
+        <a class="nav-cta" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Join the beta</a>
+      </nav>
+    </div>
+  </header>
 
-<h2>Support</h2>
-<div class="card">
-  <p>Questions, bug reports, or order help:<br>
-  <a href="mailto:charles1999.gao@gmail.com">charles1999.gao@gmail.com</a></p>
-  <p>We aim to reply within 2 business days.</p>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Your routine, made gentler</div>
+          <h1>Skincare that feels less like homework.</h1>
+          <p class="hero-lede">Connie's Skin turns the products you already own into a clear AM and PM plan—then helps you spot risky combinations, stay consistent, and understand what comes next.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a>
+            <a class="button button-quiet" href="privacy.html">Read our privacy promise</a>
+          </div>
+          <ul class="trust-list" aria-label="Product principles">
+            <li><span aria-hidden="true">✓</span> Free core routine tracking</li>
+            <li><span aria-hidden="true">✓</span> No ads or data selling</li>
+            <li><span aria-hidden="true">✓</span> Calm, non-medical guidance</li>
+          </ul>
+        </div>
 
-<h2>Common questions</h2>
-<div class="card">
-  <p><strong>How do I delete my account?</strong><br>
-  Open the app → Settings → Delete Account. Deletion is immediate and permanent, including routines, photos, and quiz answers.</p>
-  <p><strong>How do I reset my password?</strong><br>
-  On the login screen, enter your email and tap "Forgot password?" — a reset link will be sent to your inbox.</p>
-  <p><strong>Where's my kit order?</strong><br>
-  Email us with the address you used at checkout and we'll send your order status.</p>
-  <p><strong>Is the ingredient guidance medical advice?</strong><br>
-  No — warnings are conservative skincare guidance, not diagnosis or treatment. For skin conditions, please see a dermatologist.</p>
-</div>
+        <div class="hero-visual">
+          <div class="soft-orb orb-one"></div>
+          <div class="soft-orb orb-two"></div>
+          <div class="phone phone-hero">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <img src="assets/today.webp" alt="Connie's Skin Today screen showing an evening skincare routine" width="780" height="3304">
+            </div>
+          </div>
+          <div class="float-card float-warning">
+            <span class="float-icon coral" aria-hidden="true">!</span>
+            <div><strong>Ingredient check</strong><small>Space out retinoid + acid</small></div>
+          </div>
+          <div class="float-card float-streak">
+            <span class="float-icon mint" aria-hidden="true">7</span>
+            <div><strong>Steady, not perfect</strong><small>Your routine streak</small></div>
+          </div>
+          <img class="hero-mascot" src="assets/connie-mascot.webp" alt="Connie, the friendly skincare routine mascot" width="1536" height="1024">
+        </div>
+      </div>
+    </section>
 
-<h2>Legal</h2>
-<p><a href="privacy.html">Privacy Policy</a></p>
+    <section class="signal-strip" aria-label="Connie's Skin highlights">
+      <div class="shell signal-grid">
+        <p><strong>AM + PM plans</strong><span>Know what to use today</span></p>
+        <p><strong>Safety cues</strong><span>Catch common active conflicts</span></p>
+        <p><strong>Progress, gently</strong><span>See consistency without guilt</span></p>
+        <p><strong>Private by design</strong><span>Clear controls for your data</span></p>
+      </div>
+    </section>
 
+    <section class="section section-intro" id="how-it-works">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">A simple rhythm</p>
+            <h2>From shelf chaos to a routine you can follow.</h2>
+          </div>
+          <p>Good skincare is often less about adding more and more about knowing what belongs together, when to use it, and how to keep going.</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon" aria-hidden="true">⌁</div>
+            <h3>Tell Connie about your skin</h3>
+            <p>Choose your skin type, main concern, sensitivity, budget, and the amount of routine you actually want.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon" aria-hidden="true">☼</div>
+            <h3>Build your AM + PM plan</h3>
+            <p>Arrange the products you own, or start with a personalized routine that keeps daily SPF and active spacing in view.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon" aria-hidden="true">✓</div>
+            <h3>Follow it one step at a time</h3>
+            <p>Check off each step, get a gentle nudge when you want one, and see consistency build over days and weeks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="shell">
+        <div class="section-heading compact">
+          <div>
+            <p class="kicker">Made for real bathrooms</p>
+            <h2>Helpful at the exact moment skincare gets confusing.</h2>
+          </div>
+        </div>
+
+        <article class="feature-row">
+          <div class="feature-copy">
+            <span class="feature-tag">Today</span>
+            <h3>One calm answer to “what do I use tonight?”</h3>
+            <p>See your steps in order, switch between morning and evening, and mark progress without turning your routine into another performance metric.</p>
+            <ul class="check-list">
+              <li>Step-by-step AM and PM checklists</li>
+              <li>Clear empty states when nothing is scheduled</li>
+              <li>Optional reminders that stay under your control</li>
+            </ul>
+          </div>
+          <div class="feature-art mint-panel">
+            <div class="phone phone-feature">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen"><img src="assets/today.webp" alt="Today routine checklist in Connie's Skin" width="780" height="3304" loading="lazy"></div>
+            </div>
+            <div class="annotation annotation-top">Tonight · 4 steps</div>
+          </div>
+        </article>
+
+        <article class="feature-row feature-row-reverse">
+          <div class="feature-copy">
+            <span class="feature-tag coral-tag">Check &amp; caution</span>
+            <h3>Ingredient warnings that explain, not alarm.</h3>
+            <p>Connie flags a small set of common routine risks—like combining a retinoid with an acid or missing SPF in the morning—and gives you a calmer next step.</p>
+            <ul class="check-list">
+              <li>Retinoid and acid combination checks</li>
+              <li>Adjacent-night active spacing</li>
+              <li>Morning retinoid and SPF reminders</li>
+            </ul>
+          </div>
+          <div class="feature-art peach-panel">
+            <div class="warning-demo">
+              <div class="warning-mark" aria-hidden="true">!</div>
+              <p class="mini-label">High-priority check</p>
+              <h4>Give these actives a little space.</h4>
+              <p>Retinoid and exfoliating acid in the same routine may increase irritation. Consider a recovery night between them.</p>
+              <div class="ingredient-pair">
+                <span>Retinoid</span><i aria-hidden="true">+</i><span>Acid</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <div class="feature-copy">
+            <span class="feature-tag plum-tag">Progress</span>
+            <h3>Look for patterns—not perfection.</h3>
+            <p>A monthly view, adherence trends, and streak milestones help you notice consistency while leaving room for real life.</p>
+            <ul class="check-list">
+              <li>Monthly routine heatmap</li>
+              <li>7-day and 30-day consistency views</li>
+              <li>Data export when you want a copy</li>
+            </ul>
+          </div>
+          <div class="feature-art lavender-panel">
+            <div class="phone phone-feature">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen screen-progress"><img src="assets/progress.webp" alt="Progress calendar and consistency cards in Connie's Skin" width="780" height="3604" loading="lazy"></div>
+            </div>
+            <div class="annotation annotation-bottom">Your pace is still progress.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section plan-gallery" aria-labelledby="plan-title">
+      <div class="shell gallery-grid">
+        <div class="gallery-copy">
+          <p class="kicker">Built around your week</p>
+          <h2 id="plan-title">A routine that knows Monday can be different from Thursday.</h2>
+          <p>Schedule recovery nights, treatment nights, and everyday basics across the week. Your Today screen always pulls the right plan forward.</p>
+          <a class="text-link" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Ask about beta access <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="gallery-phones">
+          <div class="phone phone-gallery phone-back">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen"><img src="assets/library.webp" alt="Product library in Connie's Skin" width="780" height="5574" loading="lazy"></div>
+          </div>
+          <div class="phone phone-gallery phone-front">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen"><img src="assets/plan.webp" alt="Weekly skincare plan in Connie's Skin" width="780" height="3490" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-section" id="privacy">
+      <div class="shell privacy-grid">
+        <div class="privacy-visual">
+          <div class="privacy-ring ring-one"></div>
+          <div class="privacy-ring ring-two"></div>
+          <img src="assets/connie-mascot.webp" alt="" width="1536" height="1024" loading="lazy">
+          <span class="shield-badge" aria-hidden="true">⌾</span>
+        </div>
+        <div class="privacy-copy">
+          <p class="kicker kicker-light">Privacy is part of the routine</p>
+          <h2>Your skin data should never become ad targeting.</h2>
+          <p>Connie's Skin uses your account and routine data to run the features you choose. We do not sell personal information, run third-party ads, or use an advertising profile to shape your recommendations.</p>
+          <div class="privacy-points">
+            <div><strong>You choose the photos</strong><span>The app only accesses images you explicitly select or capture.</span></div>
+            <div><strong>You can export or delete</strong><span>Download your routine data or start account deletion from Settings.</span></div>
+            <div><strong>Scan images are not saved by Connie</strong><span>If you use the optional AI scan, the photo is processed for that request; Connie stores the resulting scores, not the original face image.</span></div>
+          </div>
+          <a class="button button-light" href="privacy.html">Read the full Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="shell faq-grid">
+        <div>
+          <p class="kicker">The honest answers</p>
+          <h2>A few things worth knowing before you begin.</h2>
+          <p class="faq-intro">Connie is a routine companion, not a dermatologist. The app is designed to make everyday skincare easier to follow—not to diagnose or treat a condition.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is Connie's Skin medical advice?<span aria-hidden="true">+</span></summary>
+            <p>No. Ingredient cautions and scan feedback are educational, cosmetic guidance. Stop using a product that causes irritation and consult a qualified clinician for persistent or concerning symptoms.</p>
+          </details>
+          <details>
+            <summary>Do I need to buy a new routine?<span aria-hidden="true">+</span></summary>
+            <p>No. You can add the products you already own and build your own AM and PM plans. Personalized product suggestions and optional kit checkout are separate from core tracking.</p>
+          </details>
+          <details>
+            <summary>Can I use the app for free?<span aria-hidden="true">+</span></summary>
+            <p>The core routine planner, safety cues, completion tracking, and quiz experience are designed to be available without a subscription.</p>
+          </details>
+          <details>
+            <summary>How do I delete my account?<span aria-hidden="true">+</span></summary>
+            <p>Open Settings in the app and choose Delete Account. You can also contact support if you cannot access the app.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="shell cta-card">
+        <div>
+          <p class="kicker kicker-light">Coming together now</p>
+          <h2>Your shelf. Your pace. A clearer next step.</h2>
+          <p>Connie's Skin is being prepared for iOS and Android. Ask to join the beta or get in touch with a question.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-light" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Join the beta</a>
+          <a class="button button-outline-light" href="support.html">Visit support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="index.html">
+          <img src="assets/icon.webp" width="42" height="42" alt="">
+          <span>Connie's Skin</span>
+        </a>
+        <p>A calm, daily skincare routine companion.</p>
+        <small>Educational skincare support—not medical diagnosis or treatment.</small>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h2>Explore</h2>
+          <a href="#how-it-works">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy promise</a>
+        </div>
+        <div>
+          <h2>Help</h2>
+          <a href="support.html">Support</a>
+          <a href="mailto:charles1999.gao@gmail.com">Contact</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>© <span data-year>2026</span> Connie's Skin. All rights reserved.</p>
+      <p>Made with care for calmer routines.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
