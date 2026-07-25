@@ -109,8 +109,8 @@
 
           <h3>Purchase and order information</h3>
           <ul>
-            <li>Items selected, totals, discount, order status, shipping contact details, and Stripe checkout identifiers.</li>
-            <li>Stripe handles payment-card information. Connie's Skin does not receive or store your full card number.</li>
+            <li>Items selected, totals, discount, order status, shipping contact details, and Stripe Checkout or PaymentIntent identifiers.</li>
+            <li>Stripe handles payment-card information. If you choose Apple Pay or Google Pay, that wallet provider and Stripe process tokenized payment credentials. Connie's Skin does not receive or store your full card number.</li>
           </ul>
 
           <h3>Technical information</h3>
@@ -160,8 +160,15 @@
             </div>
             <div>
               <h3>Stripe</h3>
-              <p>Checkout, payment processing, fraud prevention, and payment records.</p>
+              <p>Hosted or in-app checkout, payment processing, fraud prevention, and payment records.</p>
               <a href="https://stripe.com/privacy" rel="external">Stripe Privacy Policy</a>
+            </div>
+            <div>
+              <h3>Apple Pay or Google Pay</h3>
+              <p>If you select a supported device wallet, its provider processes the wallet credentials needed to authorize your payment.</p>
+              <a href="https://www.apple.com/legal/privacy/data/en/apple-pay/" rel="external">Apple Pay &amp; Privacy</a>
+              <span aria-hidden="true"> · </span>
+              <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="external">Google Payments Privacy Notice</a>
             </div>
             <div>
               <h3>GitHub Pages</h3>
