@@ -31,3 +31,39 @@ if (header && !header.classList.contains("legal-header")) {
 document.querySelectorAll("[data-year]").forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });
+
+const waitlistForm = document.querySelector("[data-waitlist-form]");
+const waitlistStatus = document.querySelector("[data-waitlist-status]");
+const waitlistSubmit = document.querySelector("[data-waitlist-submit]");
+
+if (waitlistForm && waitlistStatus && waitlistSubmit && window.fetch) {
+  waitlistForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    waitlistSubmit.disabled = true;
+    waitlistSubmit.textContent = "Joining…";
+    waitlistStatus.dataset.state = "pending";
+    waitlistStatus.textContent = "Adding you to the waitlist…";
+
+    try {
+      const response = await fetch(waitlistForm.action, {
+        method: "POST",
+        body: new FormData(waitlistForm),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) throw new Error("Waitlist submission failed");
+
+      waitlistForm.reset();
+      waitlistStatus.dataset.state = "success";
+      waitlistStatus.textContent = "You’re on the list. We’ll be in touch when beta spots open.";
+    } catch {
+      waitlistStatus.dataset.state = "error";
+      waitlistStatus.textContent = "We couldn’t add you right now. Please try again in a moment.";
+    } finally {
+      waitlistSubmit.disabled = false;
+      waitlistSubmit.textContent = "Join the waitlist";
+    }
+  });
+}

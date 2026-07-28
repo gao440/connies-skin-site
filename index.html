@@ -17,7 +17,7 @@
   <meta name="twitter:description" content="Build, follow, and understand your skincare routine without the guesswork.">
   <meta name="twitter:image" content="https://gao440.github.io/connies-skin-site/assets/og.webp">
   <link rel="icon" href="assets/favicon.png?v=3">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <title>Connie's Skin — Your calm skincare routine companion</title>
 </head>
 <body>
@@ -39,7 +39,7 @@
         <a href="#features">Features</a>
         <a href="#privacy">Privacy</a>
         <a href="support.html">Support</a>
-        <a class="nav-cta" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Join the beta</a>
+        <a class="nav-cta" href="#waitlist">Join the waitlist</a>
       </nav>
     </div>
   </header>
@@ -206,7 +206,7 @@
           <p class="kicker">Built around your week</p>
           <h2 id="plan-title">A routine that knows Monday can be different from Thursday.</h2>
           <p>Schedule recovery nights, treatment nights, and everyday basics across the week. Your Today screen always pulls the right plan forward.</p>
-          <a class="text-link" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Ask about beta access <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#waitlist">Join the beta waitlist <span aria-hidden="true">→</span></a>
         </div>
         <div class="gallery-phones">
           <div class="phone phone-gallery phone-back">
@@ -273,17 +273,46 @@
       </div>
     </section>
 
-    <section class="section final-cta">
+    <section class="section final-cta" id="waitlist" aria-labelledby="waitlist-title">
       <div class="shell cta-card">
         <div>
           <p class="kicker kicker-light">Coming together now</p>
-          <h2>Your shelf. Your pace. A clearer next step.</h2>
-          <p>Connie's Skin is being prepared for iOS and Android. Ask to join the beta or get in touch with a question.</p>
+          <h2 id="waitlist-title">Your shelf. Your pace. A clearer next step.</h2>
+          <p>Connie's Skin is being prepared for iOS and Android. Join the waitlist and we’ll email you when beta spots become available.</p>
         </div>
-        <div class="cta-actions">
-          <a class="button button-light" href="mailto:charles1999.gao@gmail.com?subject=Connie%27s%20Skin%20beta">Join the beta</a>
-          <a class="button button-outline-light" href="support.html">Visit support</a>
-        </div>
+        <form
+          class="waitlist-form"
+          action="https://formspree.io/f/xwvgypgo"
+          method="POST"
+          data-waitlist-form
+        >
+          <label for="waitlist-email">Email address</label>
+          <div class="waitlist-fields">
+            <input
+              id="waitlist-email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            >
+            <button class="button button-light" type="submit" data-waitlist-submit>
+              Join the waitlist
+            </button>
+          </div>
+          <input type="hidden" name="_subject" value="New Connie's Skin waitlist signup">
+          <input type="hidden" name="source" value="Connie's Skin website">
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="waitlist-company">Company</label>
+            <input id="waitlist-company" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+          <p class="waitlist-note">
+            We’ll only use this email for Connie’s Skin launch and beta updates.
+            See our <a href="privacy.html">Privacy Policy</a>.
+          </p>
+          <p class="waitlist-status" data-waitlist-status aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
@@ -323,6 +352,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
