@@ -237,6 +237,26 @@ p { color: var(--ink-soft); }
 .phone-front { left: 34%; z-index: 2; transform: rotate(3deg); }
 .phone-back { left: 6%; z-index: 1; transform: translateY(44px) rotate(-5deg); opacity: 0.88; }
 
+.commerce-section {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(191, 232, 226, 0.42), transparent 30%),
+    linear-gradient(145deg, #f7fbfa, var(--mint-pale));
+}
+.commerce-heading h2 { max-width: 800px; }
+.commerce-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 52px; }
+.commerce-card {
+  padding: 34px; border: 1px solid rgba(7, 91, 87, 0.13);
+  border-radius: var(--radius-lg); background: rgba(255,255,255,0.78);
+  box-shadow: var(--shadow-small);
+}
+.commerce-card > span {
+  display: inline-flex; margin-bottom: 32px; color: var(--coral);
+  font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em;
+}
+.commerce-card h3 { margin-bottom: 12px; }
+.commerce-card p { margin-bottom: 0; font-size: 0.95rem; }
+.commerce-footnote { margin: 26px 0 0; color: var(--teal); font-weight: 700; text-align: center; }
+
 .privacy-section { overflow: hidden; background: var(--teal-dark); color: var(--white); }
 .privacy-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 72px; align-items: center; }
 .privacy-copy h2 { max-width: 740px; }
@@ -396,6 +416,7 @@ p { color: var(--ink-soft); }
 
 @media (max-width: 980px) {
   .section { padding: 92px 0; }
+  .site-nav { gap: 18px; font-size: 0.88rem; }
   .hero { min-height: auto; padding-bottom: 70px; }
   .hero-grid, .legal-hero-grid, .support-hero-grid { grid-template-columns: 1fr; }
   .hero-copy { max-width: 720px; }
@@ -410,6 +431,7 @@ p { color: var(--ink-soft); }
   .gallery-grid { grid-template-columns: 1fr; min-height: auto; }
   .gallery-copy { max-width: 760px; }
   .gallery-phones { width: min(720px, 100%); margin-inline: auto; }
+  .commerce-grid { grid-template-columns: 1fr; }
   .privacy-grid { grid-template-columns: 1fr; }
   .privacy-visual { order: 2; min-height: 520px; }
   .faq-grid, .support-layout { grid-template-columns: 1fr; gap: 44px; }
@@ -450,6 +472,7 @@ p { color: var(--ink-soft); }
   .feature-art { min-height: 520px; }
   .warning-demo { padding: 28px; }
   .gallery-phones { min-height: 590px; transform: scale(0.88); transform-origin: left top; width: 112%; }
+  .commerce-card { padding: 26px; }
   .phone-gallery { width: 266px; height: 545px; }
   .phone-front { left: 33%; }
   .phone-back { left: 0; }
