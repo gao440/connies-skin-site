@@ -207,6 +207,24 @@ p { color: var(--ink-soft); }
 .mint-panel { background: linear-gradient(145deg, #daf2ee, #effaf7); }
 .peach-panel { background: linear-gradient(145deg, #fee9df, #fff8f2); }
 .lavender-panel { background: linear-gradient(145deg, #e9e2ed, #f8f3f8); }
+.match-panel {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255,255,255,0.92), transparent 25%),
+    linear-gradient(145deg, #dff3ef, #f8fbf8 58%, #fff1e8);
+}
+.match-panel .phone-screen { border-radius: 31px; }
+.match-panel .phone-screen img { width: 100%; height: 100%; object-fit: cover; }
+.phone-match-primary,
+.phone-match-secondary { position: absolute; padding: 8px; border-radius: 42px; }
+.phone-match-primary {
+  z-index: 3; right: 13%; bottom: -28px; width: 268px; height: 580px;
+  transform: rotate(2.4deg);
+}
+.phone-match-secondary {
+  z-index: 2; left: 10%; top: 76px; width: 218px; height: 472px;
+  opacity: 0.82; transform: rotate(-5.5deg);
+}
+.match-annotation { z-index: 5; top: 36px; right: 34px; }
 .phone-feature { width: 300px; height: 575px; transform: translateY(60px); border-radius: 42px; }
 .phone-feature .phone-screen { border-radius: 30px; }
 .screen-progress img { transform: translateY(-35px); }
@@ -428,6 +446,8 @@ p { color: var(--ink-soft); }
   .feature-row, .feature-row-reverse { grid-template-columns: 1fr; gap: 36px; }
   .feature-row-reverse .feature-copy { order: 0; }
   .feature-art { min-height: 560px; }
+  .phone-match-primary { right: 20%; }
+  .phone-match-secondary { left: 18%; }
   .gallery-grid { grid-template-columns: 1fr; min-height: auto; }
   .gallery-copy { max-width: 760px; }
   .gallery-phones { width: min(720px, 100%); margin-inline: auto; }
@@ -470,6 +490,9 @@ p { color: var(--ink-soft); }
   .signal-grid p { border-right: 1px solid var(--line); border-top: 1px solid var(--line); }
   .signal-grid p:first-child { border-top: 0; }
   .feature-art { min-height: 520px; }
+  .phone-match-primary { right: 7%; width: 238px; height: 515px; }
+  .phone-match-secondary { left: 2%; top: 74px; width: 184px; height: 398px; }
+  .match-annotation { top: 26px; right: 20px; }
   .warning-demo { padding: 28px; }
   .gallery-phones { min-height: 590px; transform: scale(0.88); transform-origin: left top; width: 112%; }
   .commerce-card { padding: 26px; }
@@ -507,6 +530,9 @@ p { color: var(--ink-soft); }
   .float-streak { bottom: 50px; }
   .hero-mascot { display: none; }
   .feature-art { min-height: 470px; }
+  .phone-match-primary { left: 50%; right: auto; width: 220px; height: 476px; transform: translateX(-50%) rotate(2deg); }
+  .phone-match-secondary { display: none; }
+  .match-annotation { left: 50%; right: auto; transform: translateX(-50%); white-space: nowrap; }
   .phone-feature { width: 252px; height: 500px; }
   .gallery-phones { transform: scale(0.72); width: 139%; min-height: 500px; }
   .footer-links { grid-template-columns: 1fr; }
