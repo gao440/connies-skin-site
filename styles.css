@@ -140,8 +140,12 @@ p { color: var(--ink-soft); }
 }
 .phone-screen { height: 100%; overflow: hidden; border-radius: 35px; background: #f8fafa; }
 .phone-screen img { width: 100%; max-width: none; height: auto; }
+.sim-phone { padding: 7px; }
+.sim-phone .phone-screen { border-radius: 39px; }
+.sim-phone .phone-screen img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+}
 .phone-hero { position: absolute; top: 20px; left: 50%; width: 330px; height: 676px; transform: translateX(-50%) rotate(2.6deg); }
-.phone-hero .phone-screen img { transform: translateY(-2px); }
 .float-card {
   position: absolute; z-index: 5; display: flex; align-items: center; gap: 12px;
   min-width: 220px; padding: 14px 16px; border: 1px solid rgba(7,91,87,0.09);
@@ -227,6 +231,7 @@ p { color: var(--ink-soft); }
 .match-annotation { z-index: 5; top: 36px; right: 34px; }
 .phone-feature { width: 300px; height: 575px; transform: translateY(60px); border-radius: 42px; }
 .phone-feature .phone-screen { border-radius: 30px; }
+.phone-feature-warning { transform: translateY(60px) rotate(-2.4deg); }
 .screen-progress img { transform: translateY(-35px); }
 .annotation {
   position: absolute; z-index: 4; padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.9);
@@ -286,20 +291,15 @@ p { color: var(--ink-soft); }
 .privacy-points strong { margin-bottom: 7px; color: var(--white); font-size: 0.94rem; }
 .privacy-points span { color: rgba(255,255,255,0.63); font-size: 0.84rem; }
 .privacy-visual { position: relative; min-height: 560px; display: grid; place-items: center; }
-.privacy-art-card {
-  position: relative; z-index: 2; width: min(100%, 540px); padding: 18px;
-  border: 1px solid rgba(255,255,255,0.2); border-radius: 44px;
-  background: rgba(255,255,255,0.09); box-shadow: 0 30px 70px rgba(0,0,0,0.22);
-  transform: rotate(-2deg);
+.privacy-phone {
+  z-index: 2; width: 286px; height: 620px; border-color: rgba(255,255,255,0.3);
+  transform: rotate(-2.8deg);
 }
-.privacy-art-card img {
-  width: 100%; height: auto; border-radius: 30px; object-fit: cover;
-}
-.privacy-art-card span {
-  position: absolute; left: 50%; bottom: 34px; min-width: max-content;
+.privacy-shot-label {
+  position: absolute; z-index: 3; left: 50%; bottom: 42px; min-width: max-content;
   padding: 11px 18px; border-radius: 999px; background: var(--white); color: var(--teal-dark);
   font-size: 0.82rem; font-weight: 700; box-shadow: var(--shadow-small);
-  transform: translateX(-50%) rotate(2deg);
+  transform: translateX(-50%) rotate(1.4deg);
 }
 .privacy-ring { position: absolute; border: 1px solid rgba(191,232,226,0.24); border-radius: 50%; }
 .ring-one { width: 520px; height: 520px; }
@@ -371,7 +371,17 @@ p { color: var(--ink-soft); }
 .legal-hero h1, .support-hero h1 { max-width: 860px; margin-bottom: 20px; font-size: clamp(3.2rem, 6.5vw, 6.4rem); }
 .legal-lede { max-width: 760px; font-size: 1.12rem; }
 .effective { margin-top: 30px; color: #68817e; font-size: 0.86rem; }
+.legal-visual { position: relative; min-height: 610px; }
+.legal-phone {
+  position: absolute; z-index: 1; top: 0; right: 10px; width: 248px; height: 540px;
+  border-radius: 40px; transform: rotate(3deg);
+}
+.legal-phone-terms { transform: rotate(-2.6deg); }
 .legal-promise { padding: 30px; border: 1px solid rgba(7,91,87,0.13); border-radius: var(--radius-lg); background: rgba(255,255,255,0.72); box-shadow: var(--shadow-small); }
+.legal-visual .legal-promise {
+  position: absolute; z-index: 3; left: -22px; bottom: 18px; width: min(330px, 88%);
+  backdrop-filter: blur(14px);
+}
 .legal-promise > span { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 18px; border-radius: 16px; background: var(--teal); color: var(--white); }
 .legal-promise h2 { margin-bottom: 12px; font: 400 1.7rem "DM Serif Display", Georgia, serif; }
 .legal-promise ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
@@ -408,8 +418,15 @@ p { color: var(--ink-soft); }
 .support-hero h1 { max-width: 800px; }
 .support-hero p { max-width: 680px; font-size: 1.08rem; }
 .response-time { display: flex; align-items: center; gap: 8px; margin-top: 24px; font-size: 0.88rem !important; }
-.support-mascot { height: 420px; overflow: hidden; border-radius: 48%; background: rgba(255,255,255,0.56); }
-.support-mascot img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; mix-blend-mode: multiply; }
+.support-app-preview { position: relative; min-height: 540px; }
+.support-phone { position: absolute; border-radius: 40px; }
+.support-phone-front { z-index: 2; top: 0; right: 9%; width: 250px; height: 544px; transform: rotate(3deg); }
+.support-phone-back { z-index: 1; top: 66px; left: 4%; width: 206px; height: 448px; opacity: 0.82; transform: rotate(-5deg); }
+.app-preview-note {
+  position: absolute; z-index: 4; right: 0; bottom: 42px; padding: 10px 14px;
+  border-radius: 999px; background: rgba(255,255,255,0.92); color: var(--teal);
+  box-shadow: var(--shadow-small); font-size: 0.8rem; font-weight: 700;
+}
 .support-options { padding: 60px 0; border-bottom: 1px solid var(--line); }
 .support-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .support-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--white); transition: transform 160ms ease, box-shadow 160ms ease; }
@@ -428,7 +445,8 @@ p { color: var(--ink-soft); }
 .contact-banner p { max-width: 680px; margin-bottom: 0; color: rgba(255,255,255,0.7); }
 
 .not-found { min-height: 75vh; display: grid; place-items: center; padding: 50px 20px; text-align: center; background: var(--ivory); }
-.not-found img { width: 220px; margin: 0 auto 22px; border-radius: 50%; mix-blend-mode: multiply; }
+.not-found-phone { width: 190px; height: 414px; margin: 0 auto 28px; border-radius: 34px; }
+.not-found-phone .phone-screen { border-radius: 28px; }
 .not-found h1 { margin-bottom: 14px; font-size: clamp(3rem, 8vw, 6rem); }
 .not-found p { max-width: 560px; margin-inline: auto; }
 
@@ -453,14 +471,14 @@ p { color: var(--ink-soft); }
   .gallery-phones { width: min(720px, 100%); margin-inline: auto; }
   .commerce-grid { grid-template-columns: 1fr; }
   .privacy-grid { grid-template-columns: 1fr; }
-  .privacy-visual { order: 2; min-height: 520px; }
+  .privacy-visual { order: 2; min-height: 660px; }
   .faq-grid, .support-layout { grid-template-columns: 1fr; gap: 44px; }
   .cta-card, .contact-banner { align-items: flex-start; flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr; }
   .legal-layout { grid-template-columns: 1fr; gap: 36px; }
   .legal-toc { position: relative; top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }
   .legal-toc p { grid-column: 1 / -1; }
-  .support-mascot { max-width: 600px; }
+  .legal-visual, .support-app-preview { width: min(560px, 100%); margin-inline: auto; }
 }
 
 @media (max-width: 760px) {
@@ -500,10 +518,9 @@ p { color: var(--ink-soft); }
   .phone-front { left: 33%; }
   .phone-back { left: 0; }
   .privacy-copy h2 { font-size: 2.8rem; }
-  .privacy-visual { min-height: 360px; }
-  .privacy-art-card { width: min(100%, 430px); padding: 12px; border-radius: 34px; }
-  .privacy-art-card img { border-radius: 24px; }
-  .privacy-art-card span { bottom: 24px; }
+  .privacy-visual { min-height: 560px; }
+  .privacy-phone { width: 238px; height: 518px; }
+  .privacy-shot-label { bottom: 24px; }
   .privacy-ring { transform: scale(0.75); }
   .cta-card, .contact-banner { padding: 34px 24px; }
   .cta-actions, .cta-actions .button, .waitlist-form { width: 100%; }
@@ -518,7 +535,13 @@ p { color: var(--ink-soft); }
   .legal-layout { padding-block: 50px 84px; }
   .legal-toc { grid-template-columns: 1fr; }
   .provider-grid { gap: 10px; }
-  .support-mascot { height: 320px; }
+  .legal-visual { min-height: 570px; }
+  .legal-phone { right: 4%; width: 220px; height: 478px; }
+  .legal-visual .legal-promise { left: 2%; bottom: 0; }
+  .support-app-preview { min-height: 510px; }
+  .support-phone-front { right: 10%; width: 220px; height: 478px; }
+  .support-phone-back { left: 4%; width: 178px; height: 388px; }
+  .app-preview-note { right: 2%; bottom: 20px; }
 }
 
 @media (max-width: 480px) {
@@ -535,6 +558,15 @@ p { color: var(--ink-soft); }
   .match-annotation { left: 50%; right: auto; transform: translateX(-50%); white-space: nowrap; }
   .phone-feature { width: 252px; height: 500px; }
   .gallery-phones { transform: scale(0.72); width: 139%; min-height: 500px; }
+  .privacy-visual { min-height: 500px; }
+  .privacy-phone { width: 214px; height: 465px; }
+  .legal-visual { min-height: 590px; }
+  .legal-phone { right: 0; width: 205px; height: 446px; }
+  .legal-visual .legal-promise { left: 0; width: 92%; }
+  .support-app-preview { min-height: 485px; }
+  .support-phone-front { right: 3%; width: 205px; height: 446px; }
+  .support-phone-back { left: 0; width: 164px; height: 357px; }
+  .app-preview-note { right: 0; bottom: 12px; font-size: 0.72rem; }
   .footer-links { grid-template-columns: 1fr; }
 }
 
