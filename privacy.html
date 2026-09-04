@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#075b57">
-  <meta name="description" content="Learn how Connie's Skin collects, uses, protects, and deletes account, routine, photo, scan, and order data.">
+  <meta name="description" content="Learn how Connie's Skin collects, uses, protects, exports, and deletes account, routine, diary, optional UV-location, photo, scan, and order data.">
   <meta property="og:title" content="Privacy Policy — Connie's Skin">
   <meta property="og:description" content="Clear information about the data Connie's Skin uses and the choices you have.">
   <meta property="og:type" content="website">
@@ -42,7 +42,7 @@
           <p class="kicker">Privacy Policy</p>
           <h1>Clear choices for personal skincare data.</h1>
           <p class="legal-lede">This policy explains what Connie's Skin collects, why it is used, which service providers process it, and how you can access, export, or delete it.</p>
-          <p class="effective">Effective July 24, 2026 · Last updated July 24, 2026</p>
+          <p class="effective">Effective September 4, 2026 · Last updated September 4, 2026</p>
         </div>
         <div class="legal-visual">
           <div class="phone legal-phone legal-phone-privacy sim-phone">
@@ -55,6 +55,7 @@
               <li>We do not sell your personal information.</li>
               <li>We do not run third-party advertising.</li>
               <li>You choose which photos to share with the app.</li>
+              <li>The optional UV feature uses a place you type, not your device's precise-location permission.</li>
               <li>You can export data or delete your account.</li>
             </ul>
           </div>
@@ -103,9 +104,24 @@
           <h3>Skin profile, routine, and progress information</h3>
           <ul>
             <li>Skin type, concern, sensitivity, budget, routine-size preference, onboarding selections, and product recommendations.</li>
-            <li>Products, brands, ingredient tags, purchase links, routines, ordered steps, weekly schedules, reminder preferences, and completion history.</li>
+            <li>Products, brands, ingredient tags, purchase links, user-entered product-opened dates and period-after-opening (PAO) month values, routines, ordered steps, weekly schedules, reminder preferences, and completion history.</li>
             <li>Bundle-access status and a normalized redemption code when one is accepted.</li>
           </ul>
+
+          <h3>Diary information</h3>
+          <ul>
+            <li>The calendar date for each diary entry and the entry's created and updated times.</li>
+            <li>A free-text note of up to 1,000 characters if you write one.</li>
+            <li>Any optional context tags you select: new product, travel, late night, period, stress, or weather.</li>
+          </ul>
+          <p>Diary notes are synchronized to your account so they can appear on your supported devices. Because a free-text field can contain whatever you choose to write, please do not include information you do not want stored with your account.</p>
+
+          <h3>Optional city and UV information</h3>
+          <p>If the UV feature is enabled in your version of the app and you choose to use it, the app asks you to type a city or place. It does not request your device's precise-location permission for this feature. The text you enter is sent to Open-Meteo's geocoding service to return possible matches.</p>
+          <p>After you select a match, the place name and its latitude and longitude are saved under your account identifier on that device. Before requesting a UV forecast, the app rounds the coordinates to one decimal place (a roughly 11-kilometre north-to-south grid; east-to-west spacing varies by latitude) and sends those rounded coordinates to Open-Meteo. Open-Meteo also receives technical request information such as your IP address. Your selected place, coordinates, and UV cache are not synchronized to the Connie's Skin database.</p>
+
+          <h3>Device-local PAO notice choices</h3>
+          <p>If you dismiss a product-open-period notice, the app stores a device-local record containing the product identifier, the opened date, and the label's PAO month value. This record is kept under your account identifier on that device and is not synchronized to the Connie's Skin database.</p>
 
           <h3>Photos and scan results</h3>
           <ul>
@@ -130,10 +146,12 @@
             <li>Provide accounts, synchronize app data, and restore your routine across supported devices.</li>
             <li>Build personalized product and routine suggestions from quiz answers.</li>
             <li>Evaluate the routine rules you configure and show ingredient cautions.</li>
-            <li>Track completion, adherence, milestones, and scan history.</li>
+            <li>Track completion, adherence, milestones, diary entries, and scan history.</li>
             <li>Process product images and optional AI skin scans.</li>
             <li>Create, fulfill, and support routine-kit orders.</li>
             <li>Schedule reminders you enable on your device.</li>
+            <li>If the optional UV feature is enabled and you use it, find the city you type, retrieve that place's UV forecast, and decide whether an enabled SPF reminder qualifies for that day's forecast.</li>
+            <li>Use your product-opened dates, PAO month values, and local dismissal choices to show or suppress product-open-period notices.</li>
             <li>Protect the service, prevent abuse, troubleshoot failures, and respond to support requests.</li>
             <li>Comply with legal obligations and enforce our terms.</li>
           </ul>
@@ -187,8 +205,16 @@
               <p>Processing beta-waitlist form submissions and delivering signup notifications.</p>
               <a href="https://formspree.io/legal/privacy-policy/" rel="external">Formspree Privacy Policy</a>
             </div>
+            <div>
+              <h3>Open-Meteo</h3>
+              <p>City search and UV forecast data only if the optional UV feature is enabled and you use it. Your typed search or rounded coordinates are sent from your device.</p>
+              <a href="https://open-meteo.com/en/terms" rel="external">Open-Meteo Terms &amp; Privacy</a>
+              <span aria-hidden="true"> · </span>
+              <a href="https://open-meteo.com/en/license" rel="external">Data Licence</a>
+            </div>
           </div>
           <p>These providers process information under their own terms and as needed to provide services to us. We expect service providers with access to personal information to protect it appropriately.</p>
+          <p>UV and location data are provided by <a href="https://open-meteo.com/" rel="external">Open-Meteo.com</a> under the <a href="https://open-meteo.com/en/license" rel="external">CC BY 4.0 data licence</a>. Connie's Skin formats forecast values for display and adds UV exposure-category labels; Open-Meteo does not endorse Connie's Skin.</p>
         </section>
 
         <section id="sharing">
@@ -206,7 +232,10 @@
 
         <section id="retention">
           <h2>7. Data retention and deletion</h2>
-          <p>Account, routine, product, quiz, progress, and scan-result data is generally kept while your account is active so the app can provide history and synchronization.</p>
+          <p>Account, routine, product, quiz, progress, diary, and scan-result data is generally kept while your account is active so the app can provide history and synchronization.</p>
+          <p>A diary entry remains until you clear that entry, choose Reset skin progress and confirm Reset current data, or delete your account. Product-opened dates and PAO month values remain with the related product until you clear the fields, delete the product, complete that reset flow, or delete your account.</p>
+          <p>Your selected UV place and coordinates, the most recently saved UV cache entry, and PAO-notice dismissal records stay on the device where they were created. A cached UV result is used only when its date and place match the current request and is replaced by a later successful forecast. The Reset current data and account-deletion flows are designed to clear these records for that account from the device. If device storage refuses that cleanup, the app warns you to retry the reset or clear Connie's Skin app data in device settings; after account deletion, it may instead direct you to clear app data or uninstall the app before another person uses the device.</p>
+          <p>Open-Meteo controls the API request logs it receives. Its current privacy terms state that individual API log files, which may include IP addresses or geographic coordinates, are removed after 90 days. See <a href="https://open-meteo.com/en/terms" rel="external">Open-Meteo Terms &amp; Privacy</a> for its current practices.</p>
           <p>You can start account deletion from <strong>Settings → Delete Account</strong>. The application is designed to delete the authentication account, active user-owned database rows, and user-owned product/progress photo objects. You can contact us if you cannot access the app.</p>
           <p>Some information may remain for a limited period in encrypted backups, security logs, fraud-prevention records, or records we must retain for legal, tax, accounting, dispute, or payment obligations. Stripe independently retains payment information according to its policies and legal obligations. We may retain information that has been irreversibly de-identified.</p>
           <p>Deleting the cloud account does not automatically erase a data export you previously saved or information remaining in your device's operating-system backups. You control those copies.</p>
@@ -217,9 +246,11 @@
           <ul>
             <li><strong>Photos:</strong> choose whether to grant camera/photo access and which image to select. Revoke OS permissions in device Settings.</li>
             <li><strong>Notifications:</strong> enable or disable reminders in the app and in device Settings.</li>
-            <li><strong>Export:</strong> export a JSON copy of app data from Settings.</li>
-            <li><strong>Correction:</strong> edit products, routines, profile choices, and other app information.</li>
-            <li><strong>Deletion:</strong> delete individual product photos/items or start full account deletion.</li>
+            <li><strong>Optional UV feature:</strong> choose whether to search for and save a place. You can replace or remove the selected place in the app; Connie's Skin does not request precise-location permission for this feature.</li>
+            <li><strong>Export:</strong> create a readable JSON copy from Settings and send or save it with your device's system share sheet. The export includes the locally cached app data used for your profile, quiz, products (including opened dates and PAO values), routines, schedule, completion history, recommendations, diary notes and tags, and appearance choice; legacy on-device reminder values may also appear in that cache. It does not include the separate current account-wide notification-preferences record, UV place/cache, PAO-notice dismissal records, original photos, scan history, or full payment-card number. The destination you choose controls the exported copy, so store and share it carefully.</li>
+            <li><strong>Correction:</strong> edit products, routines, diary entries, profile choices, and other app information.</li>
+            <li><strong>Reset:</strong> choose Reset skin progress and confirm Reset current data without closing your account. This clears resettable cloud data, including diary entries, and attempts to clear the account's local UV and PAO-notice state from that device. Changes that an older or offline signed-in device has not yet sent may be added again after a reset; use Delete Account when you want the account and its skincare data erased instead of reset. If device cleanup fails, the app tells you how to retry or clear its local data.</li>
+            <li><strong>Deletion:</strong> delete individual diary entries, product photos/items, or start full account deletion.</li>
             <li><strong>Support requests:</strong> contact us to request access, correction, deletion, restriction, or portability where applicable.</li>
           </ul>
           <p>Rights vary by location. We may need to verify your identity before fulfilling a request. You may also have the right to appeal or complain to a local data-protection authority.</p>
