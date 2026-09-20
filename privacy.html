@@ -42,7 +42,7 @@
           <p class="kicker">Privacy Policy</p>
           <h1>Clear choices for personal skincare data.</h1>
           <p class="legal-lede">This policy explains what Connie's Skin collects, why it is used, which service providers process it, and how you can access, export, or delete it.</p>
-          <p class="effective">Effective September 4, 2026 · Last updated September 4, 2026</p>
+          <p class="effective">Effective September 20, 2026 · Last updated September 20, 2026</p>
         </div>
         <div class="legal-visual">
           <div class="phone legal-phone legal-phone-privacy sim-phone">
@@ -75,7 +75,7 @@
         <a href="#retention">7. Retention and deletion</a>
         <a href="#choices">8. Your choices and rights</a>
         <a href="#security">9. Security</a>
-        <a href="#children">10. Children</a>
+        <a href="#children">10. Age eligibility</a>
         <a href="#international">11. International processing</a>
         <a href="#changes">12. Changes</a>
         <a href="#contact">13. Contact</a>
@@ -103,9 +103,9 @@
 
           <h3>Skin profile, routine, and progress information</h3>
           <ul>
-            <li>Skin type, concern, sensitivity, budget, routine-size preference, onboarding selections, and product recommendations.</li>
+            <li>Skin type, concerns, sensitivity, budget, routine-size preference, onboarding selections, and product recommendations. Optional answers can include pregnancy, breastfeeding or trying to conceive, ingredient avoidance, and other skin-related information.</li>
             <li>Products, brands, ingredient tags, purchase links, user-entered product-opened dates and period-after-opening (PAO) month values, routines, ordered steps, weekly schedules, reminder preferences, and completion history.</li>
-            <li>Bundle-access status and a normalized redemption code when one is accepted.</li>
+            <li>An account identifier, including an anonymous identifier when you choose a guest scan, and the scan eligibility and consent information needed to provide that feature.</li>
           </ul>
 
           <h3>Diary information</h3>
@@ -132,8 +132,8 @@
 
           <h3>Purchase and order information</h3>
           <ul>
-            <li>Items selected, totals, discount, order status, shipping contact details, and Stripe Checkout or PaymentIntent identifiers.</li>
-            <li>Stripe handles payment-card information. If you choose Apple Pay or Google Pay, that wallet provider and Stripe process tokenized payment credentials. Connie's Skin does not receive or store your full card number.</li>
+            <li>When checkout is available and you use it: selected products, quantities, totals, discounts, order status, shipping/contact details, and checkout and order identifiers. Shopify provides the checkout for new Shopify orders; earlier Stripe transaction identifiers may remain where needed for historical order support.</li>
+            <li>Shopify and the payment provider shown in checkout process payment information. If you choose a supported wallet, its provider processes the credentials needed to authorize payment. Connie's Skin does not receive or store your full card number. Checkout providers may also process cookies, device and network information for checkout operation, security and fraud prevention.</li>
           </ul>
 
           <h3>Technical information</h3>
@@ -161,10 +161,10 @@
         <section id="photos">
           <h2>4. Product photos and the optional AI skin scan</h2>
           <div class="legal-callout">
-            <strong>Connie's Skin does not save the original face image used for an AI scan.</strong>
-            <p>The image is transmitted for the requested analysis and discarded by our application after the request. We store the resulting scores, advice, model identifier, and timestamp so you can view progress.</p>
+            <strong>Your scan photo is sent for analysis; a prepared copy can remain on your device.</strong>
+            <p>After your consent, the app sends a prepared face image, reduced in size when needed, for the requested analysis. We do not save that image in Connie's Skin cloud storage. After a successful scan, the app can keep that prepared image in its local cache for visual comparisons. This photo does not sync between devices and is excluded from the app's iCloud backup. It can disappear when you log out, delete or reset scan data, uninstall the app, or the operating system clears the cache. Scan results, including scores, controlled cosmetic explanations, model identifier and date, are stored with your account separately from the photo.</p>
           </div>
-          <p>When AI analysis is enabled, the face image is sent through a Supabase Edge Function to Google's Gemini API. Google processes the image and response under its applicable API terms and privacy/data-retention rules. Depending on the API service tier, Google may retain request data for a limited period for abuse monitoring. Do not submit an image if you do not want it processed by these providers.</p>
+          <p>The app asks for your explicit permission for each scan before sending an image through Supabase to Google's Gemini API. You can decline and continue without a scan. Google's published abuse-monitoring policy provides for 55 days of retention of prompts, contextual information and outputs; authorized Google personnel may review flagged content. We do not represent this processing as zero retention. Deleting your Connie's Skin account does not immediately erase provider records retained under those separate policies. Read the <a href="https://ai.google.dev/gemini-api/terms" rel="external">Gemini API Terms</a> and <a href="https://ai.google.dev/gemini-api/docs/usage-policies" rel="external">Google's abuse-monitoring policy</a> before deciding whether to share a photo.</p>
           <p>Product photos are different: when you choose to attach one to a product, it is stored in your account's Supabase Storage area so the app can display it later. You can replace or remove it in the app, and account deletion is designed to remove user-owned storage objects.</p>
           <p>The scan is cosmetic and educational. Scores are estimates from a model and may be inaccurate. They are not a diagnosis, medical record, or treatment recommendation.</p>
         </section>
@@ -184,8 +184,18 @@
               <a href="https://ai.google.dev/gemini-api/terms" rel="external">Gemini API Terms</a>
             </div>
             <div>
+              <h3>Shopify</h3>
+              <p>Checkout, payment and order processing, fulfillment information, and checkout security when Shopify purchasing is available and you use it.</p>
+              <a href="https://www.shopify.com/legal/privacy" rel="external">Shopify Privacy Policy</a>
+            </div>
+            <div>
+              <h3>Resend</h3>
+              <p>Delivery of requested account confirmation, recovery and other authentication emails through our Supabase email configuration.</p>
+              <a href="https://resend.com/legal/privacy-policy" rel="external">Resend Privacy Policy</a>
+            </div>
+            <div>
               <h3>Stripe</h3>
-              <p>Hosted or in-app checkout, payment processing, fraud prevention, and payment records.</p>
+              <p>Processing and support of earlier Stripe payments, where applicable, including payment records and fraud prevention. New Shopify checkout uses the payment providers displayed there.</p>
               <a href="https://stripe.com/privacy" rel="external">Stripe Privacy Policy</a>
             </div>
             <div>
@@ -236,8 +246,9 @@
           <p>A diary entry remains until you clear that entry, choose Reset skin progress and confirm Reset current data, or delete your account. Product-opened dates and PAO month values remain with the related product until you clear the fields, delete the product, complete that reset flow, or delete your account.</p>
           <p>Your selected UV place and coordinates, the most recently saved UV cache entry, and PAO-notice dismissal records stay on the device where they were created. A cached UV result is used only when its date and place match the current request and is replaced by a later successful forecast. The Reset current data and account-deletion flows are designed to clear these records for that account from the device. If device storage refuses that cleanup, the app warns you to retry the reset or clear Connie's Skin app data in device settings; after account deletion, it may instead direct you to clear app data or uninstall the app before another person uses the device.</p>
           <p>Open-Meteo controls the API request logs it receives. Its current privacy terms state that individual API log files, which may include IP addresses or geographic coordinates, are removed after 90 days. See <a href="https://open-meteo.com/en/terms" rel="external">Open-Meteo Terms &amp; Privacy</a> for its current practices.</p>
-          <p>You can start account deletion from <strong>Settings → Delete Account</strong>. The application is designed to delete the authentication account, active user-owned database rows, and user-owned product/progress photo objects. You can contact us if you cannot access the app.</p>
-          <p>Some information may remain for a limited period in encrypted backups, security logs, fraud-prevention records, or records we must retain for legal, tax, accounting, dispute, or payment obligations. Stripe independently retains payment information according to its policies and legal obligations. We may retain information that has been irreversibly de-identified.</p>
+          <p>You can start account deletion from <strong>Settings → Account &amp; data → Delete account</strong>. For a guest identity, the action may be labeled <strong>Delete guest data</strong>. When deletion completes successfully, this removes the authentication account, active user-owned skincare records and product-photo storage, and attempts to clear the account's local data and scan photos. If local cleanup fails, follow the app's retry or device-cleanup instructions. Contact us if you cannot access the app.</p>
+          <p>A guest scan creates an anonymous account. It does not have an email/password until you complete account setup. Logging out or losing the guest session does not itself delete cloud records and can make that identity impossible to recover. Save the account before leaving it if you want to keep access, or use the explicit deletion action while you still have the session.</p>
+          <p>Some information may remain for a limited period in encrypted backups, security logs, fraud-prevention records, or records we must retain for legal, tax, accounting, dispute, or payment obligations. Shopify, Stripe where applicable, and payment providers independently retain transaction information under their policies and legal obligations. Account deletion does not cancel an already placed order or automatically erase records required for refunds, fulfillment, tax or disputes. We may retain information that has been irreversibly de-identified.</p>
           <p>Deleting the cloud account does not automatically erase a data export you previously saved or information remaining in your device's operating-system backups. You control those copies.</p>
         </section>
 
@@ -263,8 +274,8 @@
         </section>
 
         <section id="children">
-          <h2>10. Children</h2>
-          <p>Connie's Skin is not directed to children under 13 or the minimum digital-consent age that applies where they live. We do not knowingly collect personal information from a child without required consent. Contact us if you believe a child has provided information so we can investigate and delete it.</p>
+          <h2>10. Age eligibility</h2>
+          <p>Connie's Skin is intended for adults aged 18 and older. People under 18 must not use the service or submit photos or other personal information. Each AI scan also requires an adult-age affirmation. If you believe a person under 18 has provided personal information, contact support so we can investigate and remove it as appropriate.</p>
         </section>
 
         <section id="international">
