@@ -58,7 +58,7 @@ if (waitlistForm && waitlistStatus && waitlistSubmit && window.fetch) {
     waitlistSubmit.disabled = true;
     waitlistSubmit.textContent = "Joining…";
     waitlistStatus.dataset.state = "pending";
-    waitlistStatus.textContent = "Adding you to the waitlist…";
+    waitlistStatus.textContent = "Saving your email…";
 
     try {
       const response = await fetch(waitlistForm.action, {
@@ -73,10 +73,10 @@ if (waitlistForm && waitlistStatus && waitlistSubmit && window.fetch) {
 
       waitlistForm.reset();
       waitlistStatus.dataset.state = "success";
-      waitlistStatus.textContent = "You’re on the list. We’ll be in touch when beta spots open.";
+      waitlistStatus.textContent = "You’re on the list. We’ll email you when beta spots open.";
     } catch {
       waitlistStatus.dataset.state = "error";
-      waitlistStatus.textContent = "We couldn’t add you right now. Please try again in a moment.";
+      waitlistStatus.textContent = "Your email didn’t go through. Please try again in a moment.";
     } finally {
       waitlistSubmit.disabled = false;
       waitlistSubmit.textContent = "Join the waitlist";
