@@ -3,22 +3,37 @@ const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
 
 if (navToggle && nav) {
-  const closeNav = () => {
-    navToggle.setAttribute("aria-expanded", "false");
-    nav.classList.remove("is-open");
-    document.body.classList.remove("nav-open");
+  const navLabel = navToggle.querySelector("[data-nav-label]");
+  const mobileLayout = window.matchMedia("(max-width: 760px)");
+  const setNavOpen = (open) => {
+    navToggle.setAttribute("aria-expanded", String(open));
+    if (navLabel) navLabel.textContent = open ? "Close navigation" : "Open navigation";
+    nav.classList.toggle("is-open", open);
+    document.body.classList.toggle("nav-open", open);
   };
+  const closeNav = () => setNavOpen(false);
 
   navToggle.addEventListener("click", () => {
-    const nextOpen = navToggle.getAttribute("aria-expanded") !== "true";
-    navToggle.setAttribute("aria-expanded", String(nextOpen));
-    nav.classList.toggle("is-open", nextOpen);
-    document.body.classList.toggle("nav-open", nextOpen);
+    setNavOpen(navToggle.getAttribute("aria-expanded") !== "true");
   });
-
   nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeNav));
+  mobileLayout.addEventListener("change", closeNav);
   window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeNav();
+    if (navToggle.getAttribute("aria-expanded") !== "true") return;
+    if (event.key === "Escape") {
+      closeNav();
+      navToggle.focus();
+    }
+    if (event.key === "Tab" && mobileLayout.matches) {
+      const lastLink = nav.querySelector("a:last-child");
+      if (event.shiftKey && document.activeElement === navToggle) {
+        event.preventDefault();
+        lastLink?.focus();
+      } else if (!event.shiftKey && document.activeElement === lastLink) {
+        event.preventDefault();
+        navToggle.focus();
+      }
+    }
   });
 }
 
@@ -39,6 +54,7 @@ const waitlistSubmit = document.querySelector("[data-waitlist-submit]");
 if (waitlistForm && waitlistStatus && waitlistSubmit && window.fetch) {
   waitlistForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (waitlistSubmit.disabled) return;
     waitlistSubmit.disabled = true;
     waitlistSubmit.textContent = "Joining…";
     waitlistStatus.dataset.state = "pending";
