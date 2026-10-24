@@ -1,0 +1,14 @@
+{
+  "name": "connies-skin-share-film",
+  "private": true,
+  "scripts": {
+    "render": "mkdir -p build && remotion render src/index.tsx ConniePreview build/master.mp4 --codec=h264 --crf=17 --pixel-format=yuv420p --concurrency=4 --muted && ffmpeg -y -i build/master.mp4 -vf scale=in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p -c:v libx264 -preset slow -crf 18 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -an -movflags +faststart ../../assets/social-preview-v5.mp4",
+    "still": "remotion still src/index.tsx ConniePreview qa/poster.png --frame=450"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.257",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.257"
+  }
+}
