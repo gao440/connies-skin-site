@@ -4,7 +4,7 @@ const header = document.querySelector("[data-header]");
 
 if (navToggle && nav) {
   const navLabel = navToggle.querySelector("[data-nav-label]");
-  const mobileLayout = window.matchMedia("(max-width: 760px)");
+  const mobileLayout = window.matchMedia("(max-width: 980px)");
   const setNavOpen = (open) => {
     navToggle.setAttribute("aria-expanded", String(open));
     if (navLabel) navLabel.textContent = open ? "Close navigation" : "Open navigation";
@@ -50,6 +50,21 @@ document.querySelectorAll("[data-year]").forEach((node) => {
 const waitlistForm = document.querySelector("[data-waitlist-form]");
 const waitlistStatus = document.querySelector("[data-waitlist-status]");
 const waitlistSubmit = document.querySelector("[data-waitlist-submit]");
+
+// Attribute library referrals in the existing signup form, without a new tracker.
+if (waitlistForm) {
+  const referral = new URLSearchParams(window.location.search).get("source");
+  const sources = {
+    "product-library": "Connie's Skin product library",
+    "product-page": "Connie's Skin product page",
+    "ingredient-page": "Connie's Skin ingredient reference",
+  };
+  const sourceField = waitlistForm.querySelector('input[name="source"]');
+  if (sourceField && Object.hasOwn(sources, referral)) {
+    sourceField.value = sources[referral];
+    sourceField.defaultValue = sources[referral];
+  }
+}
 
 if (waitlistForm && waitlistStatus && waitlistSubmit && window.fetch) {
   waitlistForm.addEventListener("submit", async (event) => {

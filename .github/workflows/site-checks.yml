@@ -1,0 +1,33 @@
+name: Site checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate site and generated pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js 22
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: npm run check:syntax
+      - name: Generate library pages
+        run: npm run build
+      - name: Validate site content and links
+        run: npm run check:site
+      - name: Verify generated files are committed
+        run: npm run check:generated

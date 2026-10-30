@@ -1,0 +1,15 @@
+{
+  "name": "connies-skin-site",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build-library.mjs",
+    "check:syntax": "node --check script.js && node --check library.js && node --check scripts/build-library.mjs && node --check scripts/check-site.mjs",
+    "check:site": "node scripts/check-site.mjs",
+    "check:generated": "git diff --exit-code -- products ingredients sitemap.xml data/generated-files.json",
+    "check": "npm run check:syntax && npm run build && npm run check:site"
+  }
+}

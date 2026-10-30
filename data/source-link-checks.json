@@ -1,0 +1,336 @@
+{
+  "checkedAt": "2026-10-30T09:08:43.685885+00:00",
+  "scope": "HTTP reachability only; does not verify current ingredient formula",
+  "results": [
+    {
+      "url": "https://anua.com/products/8-hyaluronic-acid-hydrating-gentle-foaming-cleanser",
+      "status": 200,
+      "finalUrl": "https://anua.com/products/8-hyaluronic-acid-hydrating-gentle-foaming-cleanser",
+      "result": "reachable"
+    },
+    {
+      "url": "https://anua.com/products/heartleaf-pore-control-cleansing-oil-200ml",
+      "status": 200,
+      "finalUrl": "https://anua.com/products/heartleaf-pore-control-cleansing-oil-200ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://anua.com/products/heartleaf-quercetinol-pore-deep-cleansing-foam",
+      "status": 200,
+      "finalUrl": "https://anua.com/products/heartleaf-quercetinol-pore-deep-cleansing-foam",
+      "result": "reachable"
+    },
+    {
+      "url": "https://anua.com/products/retinol-0-1-caffeine-revitalizing-eye-cream",
+      "status": 200,
+      "finalUrl": "https://anua.com/products/retinol-0-1-caffeine-revitalizing-eye-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://beautyofjoseon.com/products/apricot-blossom-peeling-gel",
+      "status": 200,
+      "finalUrl": "https://beautyofjoseon.com/products/apricot-blossom-peeling-gel",
+      "result": "reachable"
+    },
+    {
+      "url": "https://beautyofjoseon.com/products/dynasty-cream",
+      "status": 200,
+      "finalUrl": "https://beautyofjoseon.com/products/dynasty-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://beautyofjoseon.com/products/ginseng-essence-water",
+      "status": 200,
+      "finalUrl": "https://beautyofjoseon.com/products/ginseng-essence-water",
+      "result": "reachable"
+    },
+    {
+      "url": "https://beautyofjoseon.com/products/glow-serum-propolis-niacinamide",
+      "status": 200,
+      "finalUrl": "https://beautyofjoseon.com/products/glow-serum-propolis-niacinamide",
+      "result": "reachable"
+    },
+    {
+      "url": "https://beautyofjoseon.com/products/revive-serum-ginseng-snail-mucin",
+      "status": 200,
+      "finalUrl": "https://beautyofjoseon.com/products/revive-serum-ginseng-snail-mucin",
+      "result": "reachable"
+    },
+    {
+      "url": "https://biodance.com/products/biodance-cera-nol-gel-toner-pad-60ea",
+      "status": 200,
+      "finalUrl": "https://biodance.com/products/biodance-cera-nol-gel-toner-pad-60ea",
+      "result": "reachable"
+    },
+    {
+      "url": "https://biodance.com/products/biodance-collagen-ampoule-50ml",
+      "status": 200,
+      "finalUrl": "https://biodance.com/products/biodance-collagen-ampoule-50ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://biodance.com/products/biodance-first-synergy-toner-150ml",
+      "status": 200,
+      "finalUrl": "https://biodance.com/products/biodance-first-synergy-toner-150ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://biodance.com/products/biodance-hydro-ceranol-real-deep-mask",
+      "status": 200,
+      "finalUrl": "https://biodance.com/products/biodance-hydro-ceranol-real-deep-mask",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cosrx.com/products/centella-blemish-cream",
+      "status": 200,
+      "finalUrl": "https://www.cosrx.com/products/centella-blemish-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cosrx.com/products/hydrium-centella-aqua-soothing-ampoule",
+      "status": 200,
+      "finalUrl": "https://www.cosrx.com/products/hydrium-centella-aqua-soothing-ampoule",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cosrx.com/products/hydrium-moisture-power-enriched-cream",
+      "status": 200,
+      "finalUrl": "https://www.cosrx.com/products/hydrium-moisture-power-enriched-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cosrx.com/products/low-ph-good-morning-gel-cleanser",
+      "status": 200,
+      "finalUrl": "https://www.cosrx.com/products/low-ph-good-morning-gel-cleanser",
+      "result": "reachable"
+    },
+    {
+      "url": "https://cosrx.com/products/pure-fit-cica-cream",
+      "status": 200,
+      "finalUrl": "https://www.cosrx.com/products/pure-fit-cica-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://isntree-global.com/products/isntree-green-tea-fresh-cleanser-120ml",
+      "status": 200,
+      "finalUrl": "https://isntree-global.com/products/isntree-green-tea-fresh-cleanser-120ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://isntree-global.com/products/isntree-green-tea-fresh-emulsion-120ml",
+      "status": 200,
+      "finalUrl": "https://isntree-global.com/products/isntree-green-tea-fresh-emulsion-120ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://isntree-global.com/products/isntree-green-tea-fresh-toner-200ml",
+      "status": 200,
+      "finalUrl": "https://isntree-global.com/products/isntree-green-tea-fresh-toner-200ml",
+      "result": "reachable"
+    },
+    {
+      "url": "https://naturium.com/products/multi-bright-advanced-serum",
+      "status": 200,
+      "finalUrl": "https://naturium.com/products/multi-bright-advanced-serum",
+      "result": "reachable"
+    },
+    {
+      "url": "https://naturium.com/products/multi-bright-milky-toner",
+      "status": 200,
+      "finalUrl": "https://naturium.com/products/multi-bright-milky-toner",
+      "result": "reachable"
+    },
+    {
+      "url": "https://naturium.com/products/multi-peptide-eye-cream",
+      "status": 200,
+      "finalUrl": "https://naturium.com/products/multi-peptide-eye-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://naturium.com/products/retinol-complex-cream",
+      "status": 200,
+      "finalUrl": "https://naturium.com/products/retinol-complex-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://roundlab.com/products/1025-dokdo-ampoule",
+      "status": 200,
+      "finalUrl": "https://roundlab.com/products/1025-dokdo-ampoule",
+      "result": "reachable"
+    },
+    {
+      "url": "https://roundlab.com/products/1025-dokdo-cleansing-oil",
+      "status": 200,
+      "finalUrl": "https://roundlab.com/products/1025-dokdo-cleansing-oil",
+      "result": "reachable"
+    },
+    {
+      "url": "https://skin1004.com/products/skin1004-madagascar-centella-ampoule-foam",
+      "status": 200,
+      "finalUrl": "https://www.skin1004.com/products/skin1004-madagascar-centella-ampoule-foam",
+      "result": "reachable"
+    },
+    {
+      "url": "https://skin1004.com/products/skin1004-madagascar-centella-cream",
+      "status": 200,
+      "finalUrl": "https://www.skin1004.com/products/skin1004-madagascar-centella-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://skin1004.com/products/skin1004-madagascar-centella-light-cleansing-oil",
+      "status": 200,
+      "finalUrl": "https://www.skin1004.com/products/skin1004-madagascar-centella-light-cleansing-oil",
+      "result": "reachable"
+    },
+    {
+      "url": "https://skin1004.com/products/skin1004-madagascar-centella-soothing-cream",
+      "status": 200,
+      "finalUrl": "https://www.skin1004.com/products/skin1004-madagascar-centella-soothing-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://skin1004.com/products/skin1004-madagascar-centella-toning-toner",
+      "status": 200,
+      "finalUrl": "https://www.skin1004.com/products/skin1004-madagascar-centella-toning-toner",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theinkeylist.com/products/caffeine-eye-cream",
+      "status": 200,
+      "finalUrl": "https://uk.theinkeylist.com/products/caffeine-eye-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theinkeylist.com/products/pha-toner",
+      "status": 200,
+      "finalUrl": "https://uk.theinkeylist.com/products/pha-toner",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theinkeylist.com/products/polyglutamic-acid-serum",
+      "status": 200,
+      "finalUrl": "https://uk.theinkeylist.com/products/polyglutamic-acid-serum",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theinkeylist.com/products/salicylic-acid-cleanser",
+      "status": 200,
+      "finalUrl": "https://uk.theinkeylist.com/products/salicylic-acid-cleanser",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theinkeylist.com/products/vitamin-b-c-e-moisturiser",
+      "status": 200,
+      "finalUrl": "https://uk.theinkeylist.com/products/vitamin-b-c-e-moisturiser",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theordinary.com/en-us/squalane-amino-acids-lip-balm-100657.html",
+      "status": 200,
+      "finalUrl": "https://theordinary.com/en-us/squalane-amino-acids-lip-balm-100657.html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://theordinary.com/en-us/vitamin-c-suspension-23-ha-spheres-2-vitamin-c-100451.html",
+      "status": 200,
+      "finalUrl": "https://theordinary.com/en-us/vitamin-c-suspension-23-ha-spheres-2-vitamin-c-100451.html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://torriden.us/products/balanceful-cleansing-foam",
+      "status": 200,
+      "finalUrl": "https://torriden.us/products/balanceful-cleansing-foam",
+      "result": "reachable"
+    },
+    {
+      "url": "https://torriden.us/products/balanceful-cleansing-gel",
+      "status": 200,
+      "finalUrl": "https://torriden.us/products/balanceful-cleansing-gel",
+      "result": "reachable"
+    },
+    {
+      "url": "https://torriden.us/products/balanceful-cream",
+      "status": 200,
+      "finalUrl": "https://torriden.us/products/balanceful-cream",
+      "result": "reachable"
+    },
+    {
+      "url": "https://torriden.us/products/balanceful-mask",
+      "status": 200,
+      "finalUrl": "https://torriden.us/products/balanceful-mask",
+      "result": "reachable"
+    },
+    {
+      "url": "https://torriden.us/products/balanceful-modeling-pack",
+      "status": 200,
+      "finalUrl": "https://torriden.us/products/balanceful-modeling-pack",
+      "result": "reachable"
+    },
+    {
+      "url": "https://versedskin.com/products/day-maker",
+      "status": 200,
+      "finalUrl": "https://versedskin.com/products/day-maker",
+      "result": "reachable"
+    },
+    {
+      "url": "https://versedskin.com/products/skin-soak",
+      "status": 200,
+      "finalUrl": "https://versedskin.com/products/skin-soak",
+      "result": "reachable"
+    },
+    {
+      "url": "https://versedskin.com/products/the-purist",
+      "status": 200,
+      "finalUrl": "https://versedskin.com/products/the-purist",
+      "result": "reachable"
+    },
+    {
+      "url": "https://versedskin.com/products/water-rush-serum",
+      "status": 200,
+      "finalUrl": "https://versedskin.com/products/water-rush-serum",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-spf-30-face-sheer-tint-light",
+      "status": 206,
+      "finalUrl": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-spf-30-face-sheer-tint-light",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-spf-30-face-sheer-tint-medium",
+      "status": 206,
+      "finalUrl": "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-spf-30-face-sheer-tint-medium",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cerave.com/sunscreen/hydrating-sheer-sunscreen-broad-spectrum-spf-30-for-face-and-body",
+      "status": 206,
+      "finalUrl": "https://www.cerave.com/sunscreen/hydrating-sheer-sunscreen-broad-spectrum-spf-30-for-face-and-body",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cerave.com/sunscreen/invisible-mineral-sunscreen",
+      "status": 200,
+      "finalUrl": "https://www.cerave.com/sunscreen/invisible-mineral-sunscreen",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cerave.com/sunscreen/mineral-sunscreen/mineral-sunscreen-stick",
+      "status": 200,
+      "finalUrl": "https://www.cerave.com/sunscreen/mineral-sunscreen/mineral-sunscreen-stick",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ulta.com/p/8-hyaluronic-acid-hydrating-gentle-foaming-cleanser-pimprod2048928?sku=2634625",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/p/8-hyaluronic-acid-hydrating-gentle-foaming-cleanser-pimprod2048928?sku=2634625",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189",
+      "result": "reachable"
+    }
+  ]
+}
