@@ -72,3 +72,8 @@ Library calls to action use a small allowlist of `source` query values.
 `script.js` copies those into the existing waitlist form’s source field. No
 additional analytics service, cookies or local storage are introduced. This
 identifies the source of a submitted signup; it does not measure page views.
+
+## Design review
+
+The November 2026 polish applies [Unslop by Damir Sokolovsky](https://github.com/heydamir/unslop)
+(CC BY 4.0) to the existing brand. See the [audit and verification notes](docs/unslop-review-2026-11-03.md).
